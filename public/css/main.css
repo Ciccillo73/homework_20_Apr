@@ -1,0 +1,50 @@
+#app {
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Helvetica';
+}
+
+
+li{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border: 10px;
+  border-radius: 5%;
+  padding: 10px;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+li.low {
+  border: 2px solid green;
+  color: green;
+}
+
+
+
+li.high {
+  border: 2px solid red;
+  color: red;
+}
+
+
+input[type="text"] {
+  width: 60%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+
+
+#save{
+  color: white;
+  background-color: black;
